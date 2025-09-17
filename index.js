@@ -70,13 +70,10 @@ setInterval(() => {
     }
 }, 30_000) // check every 30 seconds
 
-let phoneNumber = "93724211356"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "KNIGHT BOT"
+global.botname = "LOFI BOT"
 global.themeemoji = "•"
-const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
-const useMobile = process.argv.includes("--mobile")
 
 // Only create readline interface if we're in an interactive environment
 const rl = process.stdin.isTTY ? readline.createInterface({ input: process.stdin, output: process.stdout }) : null
